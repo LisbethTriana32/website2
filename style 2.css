@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: 'CameraObscuraDemo.tf';
+    src: url(Fonts/CameraObscuraDEMO.otf);
+}
+
+#banner {
+    background-color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #080707), url(Images/AbuelaBodaFixed.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.favicon {
+    width: 20vh;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    z-index: 1; 
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    color: rgb(244, 244, 244);
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    color: firebrick;
+    font-style: normal;
+    font-family: 'CameraObscuraDemo';
+    src: url('Fonts/CameraObscuraDEMO.otf');
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner-btn {
+    margin: 70px auto 0;
+}
+
+.banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5;
+}
+
+.banner-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+.banner-btn a:hover  {
+    color: #000;
+}
+
+#sidenav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #960000;
+    z-index: 3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 3px 0;
+    width: fit-content;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #db6161; 
+}
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background: #960000;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 770px){
+    .banner-text h1 {
+        font-size: 44px;
+        
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    
+}
+
+/*--MISSION STATEMENT--*/
+
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text h1{
+    text-align:center ;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #960000;
+
+}
+.title-text p{
+    margin:auto ;
+    font-size: 20px; 
+    color: #000000;
+    font-weight:normal ;
+}
+.Mission-box{ 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.Mission{
+    flex-basis: 50%;
+}
+.Mission-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.Mission-img img{
+    width: 45%;
+    border-radius: 10px;
+}
+.Mission h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #960000;
+}
+.Mission-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.Mission-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color:#960000;
+    border: 1px solid #960000;
+}
+
+.features {
+    padding: 50px;
+    text-align: center;
+}
+
+.feature-item {
+    margin-bottom: 40px;
+}
+
+.feature-item img {
+    width: 90%;
+    max-width: 400px;
+    height: relative;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .header-bg {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    nav {
+        display: block;
+        text-align: center;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+   
+    
+   
+   
+
+
+
+
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    
+    @media (max-width: 768px) {
+        header {
+            padding: 15px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        nav {
+            display: block;
+            text-align: center;
+        }
+        nav a {
+            display: block;
+            margin: 10px 0;
+        }
+        .about {
+            padding: 30px;
+        }
+        .about-image {
+            width: 200px; 
+            margin-right: 20px;
+        }
+
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .feature-item {
+        margin-bottom: 30px;
+    }
+    .feature-item img {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+footer p {
+    font-size: 0.9em;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
